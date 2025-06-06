@@ -22,6 +22,19 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav>
+          <ul className="flex gap-2 justify-center bg-black text-white">
+            <li className="hover:bg-slate-500 rounded-md">
+              <a href="/">Home</a>
+            </li>
+            <li className="hover:bg-slate-500 rounded-md">
+              <a href="/ingresar">Ingresar</a>
+            </li>
+            <li className="hover:bg-slate-500 rounded-md">
+              <a href="/articulos">Articulos</a>
+            </li>
+          </ul>
+        </nav>
         {children}
       </body>
     </html>
