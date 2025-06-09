@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <div className={`${poppins.className} antialiased`}>Página Home</div>
       <div>
-        <Image src="/pinguinos.jpg" width={500} height={500} />
+        <Image src="/pinguinos.jpg" width={500} height={500} alt="home" />
       </div>
     </>
   );

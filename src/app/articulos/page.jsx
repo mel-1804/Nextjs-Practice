@@ -3,7 +3,7 @@ const petRest = async () => {
   try {
     const peticion = await fetch("https://fakestoreapi.com/products");
     const data = await peticion.json();
-    await new Promise((resolve) => setTimeout(resolve, 4000)); // Simula un retraso de 2 segundos
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Simula un retraso de 2 segundos
     return data;
   } catch (e) {
     console.log(e);
