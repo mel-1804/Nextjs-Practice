@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LEARNING NEXT JS:
+
+This repository is based on thos video on YouTube:
+
+https://www.youtube.com/watch?v=6t2fHaUVGfQ
+
+The object is documenting as much as possible the processes toy could perform using the tecnology Next js.
 
 ## Getting Started
 

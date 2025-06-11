@@ -1,6 +1,6 @@
 import React from "react";
 import Articulos from "../page";
-import Suspense from "react";
+import { Suspense } from "react";
 
 const petRest = async (id) => {
   try {
