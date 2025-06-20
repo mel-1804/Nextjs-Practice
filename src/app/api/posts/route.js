@@ -6,16 +6,13 @@ export async function GET() {
     return NextResponse.json(posts);
 }
 
-export function PUT() {
-    return NextResponse.json({
-        MESSAGE: "PUT/api/posts",
-
+export async function POST(request) {
+    const datos = await request.json();
+    const nuevoPost = await prisma.post.create({
+        data:{
+            titulo: datos.titulo,
+            contenido: datos.contenido,
+        }
     });
-}
-
-export function DELETE() {
-    return NextResponse.json({
-        MESSAGE: "DELETE/api/posts",
-
-    });
+    return NextResponse.json(nuevoPost);
 }
