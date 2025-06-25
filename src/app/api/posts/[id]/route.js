@@ -19,8 +19,7 @@ export async function PUT( request, {params}) {
             id: parseInt(id),
         },
         data: {
-            titulo: datos.titulo,
-            contenido: datos.contenido,
+            ...datos
         }
     });
     return NextResponse.json(postAct);

@@ -40,6 +40,9 @@ export default function RootLayout({ children }) {
             <li className="hover:bg-slate-500 rounded-md">
               <Link href="/articulos">Articulos</Link>
             </li>
+            <li className="hover:bg-slate-500 rounded-md">
+              <Link href="/posts">Posts</Link>
+            </li>
           </ul>
         </nav>
         {children}
