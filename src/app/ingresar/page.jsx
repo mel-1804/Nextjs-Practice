@@ -26,6 +26,7 @@ const Ingresar = () => {
   return (
     <>
       <h1 className="text-2xl font-bold m-5 text-center">
+        {props.edit ? "Editar Post " : "Ingresar Nuevo Post"}
         Ingresar Nuevo Post
       </h1>
       <div className="flex justify-center">
