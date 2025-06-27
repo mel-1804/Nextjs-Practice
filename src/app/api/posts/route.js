@@ -1,9 +1,14 @@
 import {NextResponse} from 'next/server';
 import {prisma} from "@/app/libs/prisma";
 
-export async function GET() {
-    const posts = await prisma.post.findMany();
-    return NextResponse.json(posts);
+export async function GET(request, { params }) {
+    const { id } = await params;
+    const post = await prisma.post.findUnique({
+        where: {
+            id: parseInt(id)
+        }
+    });
+    return NextResponse.json(post);
 }
 
 export async function POST(request) {

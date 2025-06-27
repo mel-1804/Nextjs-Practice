@@ -9,7 +9,7 @@ export async function GET(request, {params}) {
             id: parseInt(id),
         },
     });
-    return NextResponse.json(posts);
+    return NextResponse.json(post);
 }
 
 export async function PUT( request, {params}) {

@@ -1,4 +1,5 @@
 import React from "react";
+import Ingresar from "@/app/ingresar/page";
 
 const cargarUnPost = async (id) => {
   const respuesta = await fetch(`http://localhost:3000/api/posts/${id}`);
@@ -7,7 +8,7 @@ const cargarUnPost = async (id) => {
 };
 
 const PostEdit = async ({ params }) => {
-  const id = await params.id;
+  const { id } = params.id;
   const post = await cargarUnPost(id);
   return (
     <div>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import props from "prop-types";
 
 const Ingresar = () => {
   const router = useRouter();
